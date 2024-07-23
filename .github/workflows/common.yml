@@ -46,7 +46,7 @@ jobs:
       r-version: "4.3"
   readme:
     name: Render README
-    uses: pharmaverse/admiralci/.github/workflows/readme-render.yml@patch-render-readme
+    uses: pharmaverse/admiralci/.github/workflows/readme-render.yml@main
     if: github.event_name == 'push'
     with:
       r-version: "4.3"
@@ -58,7 +58,7 @@ jobs:
       r-version: "4.3"
   check:
     name: Check
-    uses: pharmaverse/admiralci/.github/workflows/r-cmd-check.yml@main
+    uses: pharmaverse/admiralci/.github/workflows/r-cmd-check.yml@modify-building-rcmd-matrix
     with:
       error-on: warning # TODO: find a way to ignore specific notes
     if: github.event_name == 'pull_request'
