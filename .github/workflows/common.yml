@@ -46,7 +46,7 @@ jobs:
       r-version: "4.3"
   readme:
     name: Render README
-    uses: pharmaverse/admiralci/.github/workflows/readme-render.yml@main
+    uses: pharmaverse/admiralci/.github/workflows/readme-render.yml@patch-render-readme
     if: github.event_name == 'push'
     with:
       r-version: "4.3"
