@@ -24,5 +24,3 @@ You can install the development version of `{sdtm.oak}` from
 # install.packages("remotes")
 remotes::install_github("pharmaverse/sdtm.oak")
 ```
-
-Test
