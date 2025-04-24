@@ -64,7 +64,7 @@ jobs:
     if: github.event_name == 'pull_request'
   docs:
     name: Documentation
-    uses: pharmaverse/admiralci/.github/workflows/pkgdown.yml@main
+    uses: pharmaverse/admiralci/.github/workflows/pkgdown.yml@fix-pkgdown
     if: github.event_name == 'push' || startsWith(github.ref, 'refs/tags/v')
     with:
       r-version: "4.3"
